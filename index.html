@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Want A Flower - Tu Florería</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">YOU WANT A FLOWER</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#arreglos">Arreglos</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#pedidos">Pedidos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2>Frescura y Belleza en Cada Pétalo</h2>
+                <p>Arreglos florales únicos para cada ocasión.</p>
+                <a href="#arreglos" class="btn">Ver Arreglos</a>
+            </div>
+        </section>
+
+        <section id="arreglos" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">SECCIÓN DE ARREGLOS</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="rosas.jpeg" alt="Arreglo Floral 1">
+                        <h3>Arreglo de Rosas</h3>
+                        <p>Perfecto para expresar amor.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="mixta.jpg" alt="Arreglo Floral 2">
+                        <h3>Arreglo Mixto</h3>
+                        <p>Variedad de flores de temporada.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Lirios.webp" alt="Arreglo Floral 3">
+                        <h3>Arreglo de Lirios</h3>
+                        <p>Elegancia y sofisticación.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="cesta_florales.jpeg" alt="Arreglo Floral 4">
+                        <h3>Cestas Florales</h3>
+                        <p>Regalo ideal para celebraciones.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="ramos_de_novias.webp" alt="Arreglo Floral 5">
+                        <h3>Ramos de Novia</h3>
+                        <p>Diseños personalizados.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="orquideas.webp" alt="Arreglo Floral 6">
+                        <h3>Orquídeas</h3>
+                        <p>Belleza exótica para el hogar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="section-padded bg-light">
+            <div class="container">
+                <h2 class="section-title">SECCIÓN DE EVENTOS</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="bodas.jpg" alt="Evento 1">
+                        <h3>Bodas</h3>
+                        <p>Decoración floral para tu día especial.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="evento_corporativos.webp" alt="Evento 2">
+                        <h3>Eventos Corporativos</h3>
+                        <p>Ambientes elegantes y profesionales.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="cumpleaños.webp" alt="Evento 3">
+                        <h3>Cumpleaños</h3>
+                        <p>Arreglos festivos y coloridos.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="aniversario.jpg" alt="Evento 4">
+                        <h3>Aniversarios</h3>
+                        <p>Detalles románticos con flores.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="graduaciones.webp" alt="Evento 5">
+                        <h3>Graduaciones</h3>
+                        <p>Celebraciones con flores vibrantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pedidos" class="section-padded">
+            <div class="container contact-grid">
+                <div class="contact-form-area">
+                    <h2 class="section-title">PEDIDOS Y ENCARGOS</h2>
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Tu Nombre:</label>
+                            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Tu Email:</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+505 8888 8888">
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Tipo de Pedido:</label>
+                            <select id="type" name="type" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="arreglo">Arreglo Floral</option>
+                                <option value="evento">Decoración de Evento</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Detalles de tu Pedido:</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Describe tu pedido, ocasión, colores, tipo de flores, fecha de entrega, etc." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery-date">Fecha de Entrega (opcional):</label>
+                            <input type="date" id="delivery-date" name="delivery-date">
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar Pedido</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-area">
+                    <h3 class="section-title">Visítanos</h3>
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-86.4170889236!3d12.8687796931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ5JzIyLjQiTiA4NsKwMjUnMDkuMiJX!5e0!3m2!1ses!2sn!4v1678888888888!5m2!1ses!2sn"
+                                style="width:100%; height:300px; border:0;"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="address-details">
+                        <p><strong>Dirección:</strong> <span>De la gasolinera uno media cuadra a bajo</span></p>
+                        <p><strong>Teléfono:</strong> <span>+505 8365-9068</span></p>
+                        <p><strong>Email:</strong> <span>yourwantaflower.com</span></p>
+                        <p><strong>Horario:</strong> <span>Lun-Vie: 9am-6pm, Sáb: 10am-2pm</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#arreglos">Arreglos</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#pedidos">Pedidos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe nuestras últimas ofertas y noticias.</p>
+                    <form action="#" class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">Suscribir</button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook"></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram"></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx--v1.png" alt="Twitter"></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/pinterest--v1.png" alt="Pinterest"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 You Want A Flower. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
